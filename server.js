@@ -21,7 +21,7 @@ app.use('/v1/api', mainRouter);
 
 
 // WebSocket server
-const wss = new WebSocket.Server({ port: 8081 });
+const wss = new WebSocket.Server({ port: 8080 });
 
 wss.on('connection', (ws) => {
   ws.on('message', (message) => {
